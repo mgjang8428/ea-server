@@ -1,4 +1,4 @@
-package rot.easerver.model.entity;
+package rot.easerver.test;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

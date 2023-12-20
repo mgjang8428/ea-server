@@ -1,7 +1,6 @@
-package rot.easerver.model.service;
+package rot.easerver.test;
 
 import java.util.List;
-import rot.easerver.model.entity.TestEntity;
 
 public interface TestService {
     public void testS(TestEntity test);

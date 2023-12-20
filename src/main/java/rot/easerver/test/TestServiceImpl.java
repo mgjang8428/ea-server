@@ -1,12 +1,8 @@
-package rot.easerver.model.service.impl;
+package rot.easerver.test;
 
 import java.util.List;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import rot.easerver.model.entity.TestEntity;
-import rot.easerver.model.repository.TestRepository;
-import rot.easerver.model.service.TestService;
 
 @Service
 public class TestServiceImpl implements TestService {

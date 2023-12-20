@@ -1,4 +1,4 @@
-package rot.easerver.controller;
+package rot.easerver.test;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import rot.easerver.model.entity.TestEntity;
-import rot.easerver.model.service.impl.TestServiceImpl;
 
 
 @RestController
@@ -19,6 +17,11 @@ import rot.easerver.model.service.impl.TestServiceImpl;
 public class TestController {
     @Autowired
     private TestServiceImpl testService;
+
+    @GetMapping("/status")
+    String stats() {
+        return "online";
+    }
 
     @GetMapping("/{userName}")
     List<TestEntity> testG(@PathVariable String userName) {
